@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hartech.AboutPage">
+    <ContentPage.Content>
+        <ScrollView >
+
+            <StackLayout HorizontalOptions="StartAndExpand" Padding="30,0,30,0" BackgroundColor="White">
+            <Label Text="About Us"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" FontSize="Title" TextColor="Black"/>
+            <Label Text="Hartech Automation Limited started 23 years ago as Hartech Automated Systems and Design Services. Initially we were a design consultation service doing CAD for control system design and build projects, software development feasibility studies and development of coding. Finally, we would commission plant on behalf of our clients."
+                   FontSize="Small" FontAttributes="Bold" LineBreakMode="CharacterWrap" HorizontalTextAlignment="Center" TextColor="Black"/>
+            <Label Text="We developed an excellent reputation working for customers in the paint and finishing industry which led to the company becoming incorporated in 2001 as Hartech Automation Limited." 
+                   FontSize="Small" LineBreakMode="CharacterWrap" HorizontalTextAlignment="Center" TextColor="Black"/>
+            <Label Text="A growing range of services"
+                   FontSize="Subtitle"
+                   LineBreakMode="CharacterWrap" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"
+                   />
+            <Label Text="Hartech has continued to service the paint and finishing industry with control system design, manufacture, installation and commissioning and we are now a key provider of services in this sector with many long-standing partnerships."
+                   LineBreakMode="CharacterWrap" HorizontalTextAlignment="Center"  TextColor="Black"
+                   />
+            <Label Text="Global business know-how"
+                   FontSize="Subtitle"
+                   LineBreakMode="CharacterWrap" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"
+                   />
+            <Label Text="Expanding our capabilities, our automation expertise now extends to the development of special purpose machines for the automotive production sector and specialist manufacturing facilities worldwide. Our engineers have worked globally in most industry sectors and are familiar with all major industry control systems and component manufacturers' equipment."
+                   LineBreakMode="CharacterWrap" HorizontalTextAlignment="Center" TextColor="Black"
+                   />
+            <Label Text="Versatile engineering capability"
+                   FontSize="Subtitle"
+                   LineBreakMode="CharacterWrap" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"
+                   />
+            <Label Text="Although renowned for our expertise in the feasibility, design, development and commissioning of control systems, we provide so much more: Our cutting-edge knowledge of control systems, software and all round expertise means we are the go-to choice for innovative solutions in special purpose machinery manufacture for clients from manufacture of bespoke panels to complete system installations."
+                   LineBreakMode="CharacterWrap" HorizontalTextAlignment="Center" TextColor="Black"
+                   />
+                <Label Text=" " />
+                <Label Text="Now working from state of the art facilities in Washington, North East England, we continue to hone our skills and expand our business into new, emerging markets for customers in the UK and worldwide."
+                       LineBreakMode="CharacterWrap" HorizontalTextAlignment="Center" TextColor="Black" />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

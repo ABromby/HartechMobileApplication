@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hartech.HoldingPage">
+    <StackLayout BackgroundColor="White">
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="1">
+            <Grid>
+                <Label Text="Welcome to Hartech IoT" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Grid>
+        </Frame>
+        
+        <Grid Padding="20">
+            <Label Grid.Row="0" Text="Placeholder Text" FontSize="Title" Padding="30,10,30,10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+            <Label Grid.Row="1" Text="Intro for Scada System " FontSize="16" Padding="30,0,30,0" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+            <Label Grid.Row="2" FontSize="16" Padding="30,24,30,0"
+                Text="Use the button below to access your scada system:  " TextColor="Black" VerticalOptions="CenterAndExpand"/>
+        </Grid>
+
+        <Button BackgroundColor="Black" Text="Scada" Clicked="ScadaButton_Clicked" Padding="30,10,30,10" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+
+    </StackLayout>
+</ContentPage>

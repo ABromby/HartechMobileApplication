@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodel="clr-namespace:Hartech.MVVM.ViewModel" x:DataType="viewmodel:VMCode"
+             x:Class="Hartech.SettingsPage" BackgroundColor="White">
+    <ContentPage.BindingContext>
+        
+        <viewmodel:VMCode />
+
+    </ContentPage.BindingContext>
+
+    <StackLayout Orientation="Vertical"
+                 Margin="10"
+                 VerticalOptions="Center"
+                 HorizontalOptions="CenterAndExpand" BackgroundColor="White">
+
+        <Label Text="Please enter your unique code: "
+               FontSize="Medium"
+               HorizontalTextAlignment ="Center"
+               TextColor="Black" />
+
+        <Entry x:Name="CustomerCode"
+                   FontSize="Medium"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   Text="{Binding CustomerCode}"
+                   Placeholder="Unique Customer Code" PlaceholderColor="Gray"/>
+            <Label x:Name="Message"
+                   FontSize="Medium" TextColor="Black"
+                   Text="{Binding Message}" />
+            <Button Text="Apply"
+                BackgroundColor="Black"
+                TextColor="White"
+                Command="{Binding Apply}" />
+
+            <Label x:Name="test" 
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center" />
+
+
+    </StackLayout>
+        
+
+</ContentPage>

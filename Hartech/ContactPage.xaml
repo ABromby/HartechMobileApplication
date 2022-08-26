@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hartech.ContactPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+
+            
+                
+            <Grid Padding="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*" />
+                    <RowDefinition Height="0.5*" />
+                    <RowDefinition Height="0.5*" />
+                    <RowDefinition Height="0.5*" />
+                    <RowDefinition Height="0.5*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="2*"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Image Source="contact.png" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Button Scale="1" Opacity="0" HorizontalOptions="Center" Clicked="ImageButton_Clicked" />
+                <Label Grid.Column="1" Text="Email" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="18" TextColor="Black"/>
+
+                <Image Grid.Row="1" Source="twittericon.png" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Button Grid.Row="1" Opacity="0" Scale="1" HorizontalOptions="Center" Clicked="Twitter_Clicked" />
+                <Label Grid.Row="1" Grid.Column="1" Text="Twitter" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="18" TextColor="Black"/>
+
+                <Image Grid.Row="2" Source="linkedinicon.png" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Button  Scale="1" Opacity="0" Grid.Row="2" HorizontalOptions="Center" Clicked="Linkedin_Clicked"/>
+                <Label Grid.Row="2" Grid.Column="1" Text="LinkedIn" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="18" TextColor="Black"/>
+
+                <Image Grid.Row="3" Source="mobile.png" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Button  Grid.Row="3" Opacity="0" Scale="1" HorizontalOptions="Center" Clicked="Phone_Clicked" />
+                <Label Grid.Row="3" Grid.Column="1" Text="Phone" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="18" TextColor="Black"/>
+
+                <Image Grid.Row="4" Source="youtube.png" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Button  Grid.Row="4" Opacity="0" Scale="1" HorizontalOptions="Center" Clicked="Youtube_Clicked"/>
+                <Label Grid.Row="4" Grid.Column="1" Text="Youtube" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="18" TextColor="Black"/>
+
+
+
+            </Grid>
+                    
+                
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
